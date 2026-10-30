@@ -1,0 +1,6 @@
+{
+  "name": "COTASGU – Cooperativa de Transportes",
+  "description": "Landing Page institucional da COTASGU – Cooperativa de Transportes. Fortalecendo pessoas e construindo oportunidades para quem move o Brasil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
