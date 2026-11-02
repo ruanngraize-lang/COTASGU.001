@@ -4,9 +4,9 @@
  */
 
 // Configuração Centralizada de Contato
-export const WHATSAPP_NUMBER = "5547992606523";
-export const WHATSAPP_DISPLAY = "(47) 99260-6523";
-export const WHATSAPP_INTERNATIONAL = "+55 (47) 99260-6523";
+export const WHATSAPP_NUMBER = "5555999551366";
+export const WHATSAPP_DISPLAY = "(55) 99955-1366";
+export const WHATSAPP_INTERNATIONAL = "+55 (55) 99955-1366";
 
 export const DEFAULT_WHATSAPP_MESSAGE =
   "Olá! Conheci a COTASGU pelo site e gostaria de saber mais sobre a cooperativa.";

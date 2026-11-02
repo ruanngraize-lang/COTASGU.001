@@ -31,22 +31,22 @@ export const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-200 ${
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 py-2.5'
-          : 'bg-white border-b border-slate-100 py-3.5'
+          ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 py-2'
+          : 'bg-white border-b border-slate-100 py-2.5 sm:py-3'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-6">
-          {/* Zone 1: Brand Logo */}
+          {/* Zone 1: Brand Logo - Increased by 20% for optimal visibility */}
           <a
             href="#inicio"
-            className="flex items-center gap-3 shrink-0 focus-visible:outline-2 focus-visible:outline-emerald-600 rounded-md"
+            className="flex items-center gap-3 shrink-0 focus-visible:outline-2 focus-visible:outline-emerald-600 rounded-md py-0.5"
             aria-label="COTASGU – Página Inicial"
           >
             <img
               src="/assets/logo-cotasgu-transparent.png"
               alt="COTASGU – Cooperativa de Transportes"
-              className="h-10 sm:h-12 w-auto object-contain"
+              className="h-12 sm:h-[58px] w-auto object-contain transition-all duration-200"
               referrerPolicy="no-referrer"
             />
           </a>

@@ -23,13 +23,13 @@ export const MissionSection: React.FC = () => {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-        {/* Official Brand Logo Presentation */}
-        <div className="flex justify-center mb-10">
-          <div className="p-3 bg-white rounded-2xl shadow-sm border border-slate-100">
+        {/* Official Brand Logo Presentation - Scaled 5x on Desktop/Tablet and 3x on Mobile */}
+        <div className="flex justify-center items-center mb-8 sm:mb-12">
+          <div className="p-4 sm:p-6 md:p-8 bg-white/80 rounded-3xl transition-transform duration-300 hover:scale-[1.02]">
             <img
               src="/assets/logo-cotasgu-transparent.png"
               alt="Logomarca Oficial COTASGU – Cooperativa de Transportes"
-              className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+              className="h-44 sm:h-72 md:h-96 lg:h-[420px] w-auto max-w-[90vw] md:max-w-2xl object-contain drop-shadow-sm"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -65,8 +65,33 @@ export const MissionSection: React.FC = () => {
           para os profissionais do transporte.
         </p>
 
+        {/* Logo da Associação Parceira (ABTI) - Visível no fundo branco da LP */}
+        <div className="my-10 max-w-xl mx-auto">
+          <div className="bg-slate-50/90 hover:bg-slate-50 border border-slate-200/80 rounded-2xl p-5 sm:p-6 shadow-xs flex flex-col items-center text-center transition-all">
+            <span className="text-[11px] sm:text-xs font-bold tracking-widest text-slate-500 uppercase mb-3 flex items-center gap-1.5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1E7B34]" />
+              <span>Associação Parceira do Setor</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1E7B34]" />
+            </span>
+
+            {/* ABTI Logo adaptado com contraste total para o fundo branco */}
+            <div className="py-2 px-4 flex items-center justify-center">
+              <img
+                src="/assets/abti-logo-navy.png"
+                alt="ABTI – Associação Brasileira de Transportadores Internacionais"
+                className="h-12 sm:h-16 md:h-20 w-auto max-w-[85vw] sm:max-w-md object-contain drop-shadow-xs"
+                referrerPolicy="no-referrer"
+              />
+            </div>
+
+            <p className="text-xs text-slate-500 mt-2 font-medium">
+              Fortalecendo o transporte rodoviário de cargas nacional e internacional.
+            </p>
+          </div>
+        </div>
+
         {/* Secondary Conversion Action */}
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={getWhatsAppUrl("Olá! Gostaria de conversar com a COTASGU sobre a missão da cooperativa.")}
             target="_blank"
@@ -74,7 +99,7 @@ export const MissionSection: React.FC = () => {
             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm sm:text-base font-bold text-white bg-[#0A2558] hover:bg-[#163E8A] rounded-xl shadow-md transition-colors"
           >
             <MessageCircle className="w-4 h-4 text-emerald-400" />
-            <span>Converse com nossa equipe</span>
+            <span>Fale com nossa equipe</span>
             <ArrowRight className="w-4 h-4 text-white/70" />
           </a>
         </div>
