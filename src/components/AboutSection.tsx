@@ -59,9 +59,9 @@ export const AboutSection: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-white h-full flex flex-col justify-between">
               <div className="relative overflow-hidden aspect-[4/3] lg:aspect-auto lg:h-72">
                 <img
-                  src="/src/assets/images/driver_professional_1793385263638.jpg"
+                  src="/src/assets/images/driver_no_logo_1793702346585.jpg"
                   alt="Motorista profissional de transporte rodoviário parceiro da COTASGU"
-                  className="w-full h-full object-cover object-top hover:scale-102 transition-transform duration-500"
+                  className="w-full h-full object-cover object-[center_18%] hover:scale-102 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-md text-xs font-bold text-[#0A2558]">
